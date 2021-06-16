@@ -1,0 +1,29 @@
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  font-size: 62.5%; // 10px as 1 rem == 16px = 1.6 rem
+  --color-bright-orange: hsl(31, 77%, 52%);
+  --color-dark-cyan: hsl(184, 100%, 22%) ;
+  --color-very-dark-cyan: hsl(179, 100%, 13%) ;
+  --neutral-transparent-white: hsla(0, 0%, 100%, 0.75);
+  --neutral-elements: hsl(0, 0%, 95%);
+
+}
+
+body {
+  box-sizing: border-box;
+}
+
+
+
+

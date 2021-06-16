@@ -1,0 +1,18 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass mixins.
+// -----------------------------------------------------------------------------
+@import "../abstracts/variables";
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 23.43em) { @content };  //375px
+  }
+  @if $breakpoint == tablet {
+    @media only screen and (min-width: 48em) { @content }; //768px
+  }
+  @if $breakpoint == desktop {
+    @media only screen and (min-width: 62em) { @content }; //960px
+  }
+}
+
+

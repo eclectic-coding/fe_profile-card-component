@@ -1,0 +1,23 @@
+/**
+ * Basic typography style -- Semantic and elements styles
+ * Classes will be located in other partials
+ */
+@import "../abstracts/variables";
+
+body {
+  font-family: $body-font-stack;
+  // background-color: var(--neutral-transparent-white);
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.6;
+
+  @include respond(desktop) {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+  }
+}
+
+a {
+  text-decoration: none;
+}
